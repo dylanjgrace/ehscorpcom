@@ -1,0 +1,19 @@
+
+RewriteEngine on
+# Use PHP5.4 as default
+# AddHandler application/x-httpd-ea-php54 .php
+
+RewriteCond %{HTTP_HOST} ^login\.eh1solution\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.login\.eh1solution\.com$
+RewriteRule ^/?$ "http\:\/\/96\.238\.63\.219" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^login\.ehs\-corp\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.login\.ehs\-corp\.com$
+RewriteRule ^/?$ "http\:\/\/100\.10\.88\.186" [R=301,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

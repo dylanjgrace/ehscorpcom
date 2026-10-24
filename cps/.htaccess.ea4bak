@@ -1,0 +1,12 @@
+
+RewriteEngine on
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+RewriteCond %{HTTP_HOST} ^cps\.eh1solution\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cps\.eh1solution\.com$
+RewriteRule ^/?$ "http\:\/\/100\.10\.88\.186" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^cps\.ehs\-corp\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cps\.ehs\-corp\.com$
+RewriteRule ^/?$ "http\:\/\/100\.10\.88\.186\/" [R=301,L]
+

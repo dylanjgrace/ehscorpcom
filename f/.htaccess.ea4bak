@@ -1,0 +1,8 @@
+
+RewriteEngine on
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+RewriteCond %{HTTP_HOST} ^f\.eh1solution\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.f\.eh1solution\.com$
+RewriteRule ^/?$ "http\:\/\/www\.eh1solution\.com\/forum\/ehs" [R=301,L]
+

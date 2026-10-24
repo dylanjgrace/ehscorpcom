@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>EHS Corp - Products</title>
+		<meta name="description" content="Creators of the Intrinsic Encounters.">
+		<meta property="og:title" content="EHS Corp">
+		<meta property="og:description" content="Creators of the Intrinsic Encounters.">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="http://ehs-corp.com/images/logo.png"> <!-- image that gets displayed when someone links the website on facebook -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="EHS Corp's Home Page">
+		<meta name="twitter:description" content="Creators of the Intrinsic Encounters.">
+		<meta name="twitter:image" content="http://ehs-corp.com/images/logo.png"> <!-- image that gets displayed when someone links the website on twitter -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.0/less.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap-carousel.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/main.css" rel="stylesheet">
+		<link rel='stylesheet' id='tp-raleway-css' href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.2.3' type='text/css' media='all'/>
+		<script>
+			$(document).ready(function(){
+				$("#carouselthing").carousel({
+					interval:false
+				});
+				var ehs_indicators = $(this).find(".ehs-carousel-indicators");
+				var ehs_indicators_text = ehs_indicators.find(".active").text();
+				console.debug(ehs_indicators_text);
+				$("#carouseltitle").text(ehs_indicators_text);
+				$("#carouselthing").on('slide.bs.carousel', function(event) {
+					var ehs_indicators = $(this).find(".ehs-carousel-indicators");
+					var ehs_indicators_text = ehs_indicators.find(".active").text();
+					if(ehs_indicators_text != null && ehs_indicators_text != "undefined" && ehs_indicators_text != "")
+					{
+						console.debug(ehs_indicators_text);
+						$("#carouseltitle").text(ehs_indicators_text);
+					}
+				})
+			});
+		</script>
+		<style>
+			body { overflow-x: hidden; width: 100%; }
+		</style>
+	</head>
+	<body>
+		<div class="ehs-navbar">
+			<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2"><li class="ehs-navbar-logo"><a href="./"><img src="./img/logo.png" height="80px" title="EHS" alt="EHS"></a></li></div>
+				<div class="col-md-5"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<ul>
+						<li class="ehs-menu-item active-page"><a href="./product.html">PRODUCTS</a></li>
+						<li class="ehs-menu-item"><a href="./videos.html">VIDEOS</a></li>
+						<li class="ehs-menu-item"><a href="./about.html">ABOUT</a></li>
+						<li class="ehs-menu-item"><a href="./contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+		<div style="height:50px"></div>
+		<div class="container">
+			<a class="pull-left" style="font-size: 40px;" href="#carouselthing" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<div class="ehs-carousel-title" id="carouseltitle" style="display: inline"></div>
+			<a class="pull-right" style="font-size: 40px;" href="#carouselthing" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+		</div>
+		<div id="carouselthing" class="carousel slide" data-ride="carousel" data-interval="3600000">
+			<ol class="carousel-indicators ehs-carousel-indicators">
+				<li data-target="#carouselthing" data-slide-to="0" class="active">Introduction</li>
+				<li data-target="#carouselthing" data-slide-to="1">ICD-10</li>
+				<li data-target="#carouselthing" data-slide-to="2">HD</li>
+				<li data-target="#carouselthing" data-slide-to="3">Unique</li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="container">
+						<p>
+						</p>
+						<br>
+						<div class="ehs-youtube-box">
+							<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/M6bwlD-n298?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container">
+						<p>Using the Cognitive Load Theory as our inspiration of the Intrinsic Encounters we have been able to create a unique Centricity EMR© experience while minimizing the mental effort when interacting with our software.</p>
+						<br>
+						<div class="ehs-youtube-box">
+							<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/JGhoLcsr8GA?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container">
+						<p>Beginning on October 1st, 2015 practices around the world must be in compliance with the new mandated ICD-10 updated from ICD-9. Our Intrinsic Encounters are in compliant out of the box to ensure a stress free upgrade for you and your practice.</p>
+						<br>
+						<div class="ehs-youtube-box">
+							<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/JGhoLcsr8GA?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container">
+						<p>Display resolutions only grow over the years but yet your software doesn't <i> always </i> scale with modern aspect ratios or resolutions. We have intelligently created an suite of software that fits perfectly for the worlds most common resolution (1366x768) found on most laptops and monitors , all without scrolling or tabs. The Intrinsic Encounters maxmize productivity with a unique split-screen experience never before seen while clustering relevant data without leaving your Phase or physical space.</p>
+						<br>
+						<div class="ehs-youtube-box">
+							<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/JGhoLcsr8GA?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="container">
+						<p>We offer over 100 functionalities and the ability to go anywhere in the form with two clicks or less. Seamless communications with your staff through Reminders, Flags, Alerts, and Care Alerts from within the encounter. Manage all of your assessments from the patient’s problem list.</p>
+						<br>
+						<div class="ehs-youtube-box">
+							<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/JGhoLcsr8GA?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="pull-right text-right">
+					<div class="row">
+						EHS, Corp. 2015
+					</div>
+					<div class="row">
+						Website by: Michael L. Clements
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
