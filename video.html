@@ -21,6 +21,9 @@
 		<link href="assets/css/owl.transitions.css" rel="stylesheet">
 		<link href="assets/css/animate.min.css" rel="stylesheet">
 		
+		<script src="./assests/js/autohover.js"></script>
+		 
+
 		<!-- Fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
@@ -56,6 +59,7 @@
 						
 						<a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a>
 						
+						
 					</div><!-- /.container -->
 				</div><!-- /.navbar-header -->
 				
@@ -74,83 +78,16 @@
 							
 							<ul class="nav navbar-nav">
 								<li class="dropdown">
-								<a href="./index.html">Intrinsic</a>
-								</li><!-- /.dropdown -->		
+									<a href="./chug.html">Presentation</a>
+								</li><!-- /.dropdown -->								
 								<li class="dropdown">
-									<a href="#modal-contact01" data-toggle="modal" >Free Trial</a>
-												<div class="modal fade" id="modal-contact01" tabindex="-1" role="dialog" aria-labelledby="modal-contact01" aria-hidden="true">
-				<div class="modal-dialog modal-sm">
-					<div class="modal-content">
-						
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
-							<h4 class="modal-title" id="modal-contact01">Intrinsic 30-day Free Trial - <a href="mailto:support@ehs-corp.com?subject=Intrinsic%20Demo%20Request&body=I%20would%20like%20a%2030-day%20free%20trial." border="0"> <font color="orange"><b>Contact via Outlook ↗</b></h4></font></a>
-						</div><!-- /.modal-header -->
-						
-						<!-- ============================================================= MODAL CONTENT ============================================================= -->
-						
-						<div class="modal-body">
-							
-							<section id="contact-form">
-								<div class="container inner-xs">
-									<div class="row">
-										<div class="col-xs-12 inner-bottom-xs">
-											<br>											
-											<form id="contactform" class="forms" action="contact.php" method="post">
-												
-												<div class="row">
-													
-													<div class="col-sm-6">
-														<input type="text" name="name" class="form-control" placeholder="Name">
-													</div><!-- /.col -->
-													
-													<div class="col-sm-6">
-														<input type="email" name="email" class="form-control" placeholder="Email">
-													</div><!-- /.col -->
-													
-												</div><!-- /.row -->
-												
-												<div class="row">
-													<div class="col-xs-12">
-														<textarea name="message" class="form-control" placeholder="Schedule preferences, questions, comments, etc. "></textarea>
-													</div><!-- /.col -->
-												</div><!-- /.row -->
-												
-												<button type="submit" class="btn btn-default btn-submit">Send Message</button>
-											</form>
-											
-											<div id="response"></div>
-											
-										</div><!-- ./col -->
-									</div><!-- /.row -->
-								</div><!-- /.container -->
-							</section>
-						</div><!-- /.modal-body -->
-						
-						<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
-						
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div><!-- /.modal-footer -->
-						
-					</div><!-- /.modal-content -->
-				</div><!-- /.modal-dialog -->
-			</div><!-- /.modal -->
+									<a href="#modal-work100" data-toggle="modal">Request Demo</a>
 								</li><!-- /.dropdown -->
 								<li class="dropdown">
 									<a href="./video.html">Videos</a>
 								</li><!-- /.dropdown -->
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle js-activated">About</a>
-										<ul class="dropdown-menu">
-											<li><a href="./about.html">Company History</a></li>	
-											<li><a href="./about.html">Commitment</a></li>	
-											<li><a href="./about.html#CompanyHistory">Mission Statement</a></li>
-											<li><a href="./about.html#CompanyHistory">Our Experience</a></li>
-											<li><a href="./about.html#CompanyHistory">Clients</a></li>	
-											<li><a href="./about.html#testimonial">Client Testimonials</a></li>	
-											
-											</ul>
+									<a href="./about.html">About</a>
 								</li><!-- /.dropdown -->
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle js-activated">Contact</a>
@@ -180,205 +117,309 @@
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.yamm -->
 			</div><!-- /.navbar -->
+
+<!-- This is the Request demo piece -->
+			<div class="modal fade" id="modal-work100" tabindex="-1" role="dialog" aria-labelledby="modal-work100" aria-hidden="true">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
+							<h4 class="modal-title" id="modal-work06">Request a Demo</h4>
+						</div><!-- /.modal-header -->
+						
+						<!-- ============================================================= MODAL CONTENT ============================================================= -->
+						
+						<div class="modal-body">
+
+<section id="contact-form">
+				<div class="container inner">
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row">
+								
+								<div class="col-sm-6 outer-top-md inner-right-sm">
+						
+									<form name="htmlform" method="post" action="html_form_send.php">
+										
+										<div class="row">
+											<div class="col-sm-6">
+												<input  type="text" name="first_name" maxlength="50" size="30" placeholder="First Name*">
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										<div class="row">
+											<div class="col-sm-6">
+												<input  type="text" name="last_name" maxlength="50" size="30" placeholder="Last Name*">
+											</div><!-- /.col -->
+										</div><!-- /.row -->										
+										<div class="row">
+											<div class="col-sm-6">
+												  <input  type="text" name="email" maxlength="80" size="30" placeholder="E-Mail*">
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										<div class="row">
+											<div class="col-sm-6">
+												  <input  type="text" name="telephone" maxlength="80" size="30" placeholder="Phone Number">
+											</div><!-- /.col -->
+										</div><!-- /.row -->										
+											<div class="row">
+											<div class="col-sm-12">
+												<textarea name="comments" class="form-control" placeholder="Schedule preferences, questions, etc."></textarea>
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										
+										<button type="submit" class="btn btn-default btn-submit">Request Demo</button>
+										
+									</form>
+									
+									<div id="response"></div>
+									
+								</div><!-- ./col -->
+								
+								<div class="col-sm-6 outer-top-md inner-left-sm border-left">
+									<center>
+									<h2>Congratulations! </h2>
+									
+									<p>You're one step closer to ending <br> your frustration with Centricity EMR.</p>
+								
+									<br><br>
+									<br><br>
+<img src="http://ehs-corp.com/beta/assets/images/Logo.png" width="260px">
+										</center>
+								</div><!-- /.col -->
+								
+							</div><!-- /.row -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					
+				</div><!-- /.container -->
+			</section>						
+
+						</div><!-- /.modal-body -->
+						
+						<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
+						
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div><!-- /.modal-footer -->
+						
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->	
+
 		</header>
-		
 		<!-- ============================================================= HEADER : END ============================================================= -->
 		
 		
 		<!-- ============================================================= MAIN ============================================================= -->
-		
-		<main>
-			<section id="hero" class="img-bg-bottom img-bg-soft tint-bg" style="background-image: url(assets/images/art/slider03.jpg);">
+		<main>	
+	
+			<br><Br><Br><Br>
+			<section id="product">
 				<div class="container inner">
-					<div class="row">
-						<div class="col-sm-10">
-							<header>
-								<h1>Videos</h1>
-								<P>Learn more about Intrinsic's unique functionalities.</p>
-							</header>
-						</div><!-- /.col -->
-					</div><!-- ./row -->
-				</div><!-- /.container -->
-			</section>				
-			<section id="circle-tabs">
-				<div class="container inner">
-					<div class="row">
-						<div class="col-xs-12 inner-top">
-							<div class="tabs tabs-services tabs-circle-top tab-container">
-								
-								<ul class="etabs text-center">
-									<li class="tab"><a href="#tab-1">General</a></li>
-									<li class="tab"><a href="#tab-2">Subjective</a></li>
-									<li class="tab"><a href="#tab-3">Objective</a></li>
-									<li class="tab"><a href="#tab-4">Assmnt/Plan</a></li>
-								</ul><!-- /.etabs -->
-								
-								<div class="panel-container">
-									
-									<div class="tab-content" id="tab-1">
-										<section id="portfolio-post">
-				<div class="container inner-top-xs inner-bottom">
 					
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="video-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/RbazNkbh96s?rel=0&amp" width="1170" height="658" frameborder="0"></iframe>
-							</div>
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-					
-					<div class="row inner-top-xs reset-xs">
-						
-						<div class="col-sm-7 inner-top-xs inner-right-xs">
-							<header>
-								<h2>General Overview</h2>
-								<p class="text-normal">Authored by: Michael Zimmerman, MD</p>
-								<p class="text-normal">Using the Cognitive Load Theory as our inspiration of the Intrinsic Encounters we have been able to create a unique Centricity EMR© experience while minimizing the mental effort when interacting with our software.</p>
-							</header>
-						</div><!-- /.col -->
-						<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
-							<ul class="item-details">
-									<ul class="contacts">
-										<h2>More Tutorials</h2>
-										<li>
-											<a href="https://www.youtube.com/channel/UCiH4dl5X0YGw2hRFTP4FkUA/videos?view=0&sort=dd&shelf_id=0" border="0">
-											Visit our YouTube Channel↗
-											</a>
-										</li>
-									</ul>
-								</ul>
-								</ul>
-						</div><!-- /.col -->
-						
-					</div><!-- /.row -->
-					
-				</div><!-- /.container -->
-				
-			</section>
-									</div><!-- /.tab-content -->
-									
-									<div class="tab-content" id="tab-2">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="video-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/UeHg9sFp2a4?rel=0&amp;controls=1&amp;showinfo=0" width="1170" height="658" frameborder="0"></iframe>
-							</div>
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-					
-					<div class="row inner-top-xs reset-xs">
-						
-						<div class="col-sm-7 inner-top-xs inner-right-xs">
-							<header>
-								<h2>Subjective Overview</h2>
-								<p class="text-normal">Authored by: Michael Zimmerman, MD</p>
-								<p class="text-normal">Using the Cognitive Load Theory as our inspiration of the Intrinsic Encounters we have been able to create a unique Centricity EMR© experience while minimizing the mental effort when interacting with our software.</p>
-							</header>
-						</div><!-- /.col -->
-						<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
-							<ul class="item-details">
-									<ul class="contacts">
-										<h2>More Tutorials</h2>
-										<li>
-											<a href="https://www.youtube.com/channel/UCiH4dl5X0YGw2hRFTP4FkUA/videos?view=0&sort=dd&shelf_id=0" border="0">
-											Visit our YouTube Channel↗
-											</a>
-										</li>
-									</ul>
-								</ul>
-						</div><!-- /.col -->
-						
-					</div><!-- /.row -->
-									</div><!-- /.tab-content -->
-									
-									<div class="tab-content" id="tab-3">
-										<div class="row">
-						<div class="col-sm-12">
-							<div class="video-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/e7VDK8cSozQ?rel=0&amp;controls=1&amp;showinfo=0" width="1170" height="658" frameborder="0"></iframe>
-							</div>
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-					
-					<div class="row inner-top-xs reset-xs">
-						
-						<div class="col-sm-7 inner-top-xs inner-right-xs">
-							<header>
-								<h2>Objective Overview</h2>
-								<p class="text-normal">Authored by: Michael Zimmerman, MD</p>
-								<p class="text-normal">Using the Cognitive Load Theory as our inspiration of the Intrinsic Encounters we have been able to create a unique Centricity EMR© experience while minimizing the mental effort when interacting with our software.</p>
-							</header>
-						</div><!-- /.col -->
-						<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
-							<ul class="item-details">
-									<ul class="contacts">
-										<h2>More Tutorials</h2>
-										<li>
-											<a href="https://www.youtube.com/channel/UCiH4dl5X0YGw2hRFTP4FkUA/videos?view=0&sort=dd&shelf_id=0" border="0">
-											Visit our YouTube Channel↗
-											</a>
-										</li>
-									</ul>
-								</ul>
-						</div><!-- /.col -->
-						
-					</div><!-- /.row -->
-									</div><!-- /.tab-content -->
-									
-									<div class="tab-content" id="tab-4">
-										<div class="row">
-						<div class="col-sm-12">
-							<div class="video-container">
-								<iframe src="https://www.youtube-nocookie.com/embed/Ebpp4Djmxng?rel=0&amp;controls=1&amp;showinfo=0" width="1170" height="658" frameborder="0"></iframe>
-							</div>
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-					
-					<div class="row inner-top-xs reset-xs">
-						
-						<div class="col-sm-7 inner-top-xs inner-right-xs">
-							<header>
-								<h2>Assessment & Plan Overview</h2>
-								<p class="text-normal">Authored by: Michael Zimmerman, MD</p>
-								<p class="text-normal">Using the Cognitive Load Theory as our inspiration of the Intrinsic Encounters we have been able to create a unique Centricity EMR© experience while minimizing the mental effort when interacting with our software.</p>
-							</header>
-						</div><!-- /.col -->
-						<div class="col-sm-4 col-sm-offset-1 outer-top-xs inner-left-xs border-left">
-							<ul class="item-details">
-									<ul class="contacts">
-										<h2>More Tutorials</h2>
-										<li>
-											<a href="https://www.youtube.com/channel/UCiH4dl5X0YGw2hRFTP4FkUA/videos?view=0&sort=dd&shelf_id=0" border="0">
-											Visit our YouTube Channel↗
-											</a>
-										</li>
-									</ul>
-								</ul>
-						</div><!-- /.col -->
-						
+
+				<div class="left">
+					<div class="ytvideo">
+						<iframe  src="https://player.vimeo.com/video/167043672" frameborder="0" allowfullscreen></iframe>
 					</div>
-									</div><!-- /.tab-content -->									 
-								</div><!-- /.panel-container -->
-								 
-							</div><!-- /.tabs -->
+				</div>
+				<div class="right">
+							<h2>Intake</h2>
+							Top to bottom, task based workflow.<br><br>
+							Auto calculates height in cm, weight in kg, temperatue to celcius, weight changes, ideal weight, and average blood pressure. <br><br>
+							Easy completion of required and ad hoc Assessments, Tests and MA Procedures.<br><br>
+							Facilitated "hand off" to provider.
+				</div>
+
+			
+				</div><!-- /.container -->
+			</section>
+			<br><br><br><br><br>
+			<section id="product">
+				<div class="container inner">
+					
+
+				<div class="opposite-left">
+					<div class="ytvideo">
+						<iframe  src="https://player.vimeo.com/video/167939845" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="opposite-right">
+							<h2>Subjective</h2>
+							Clean hand off of Medical Assistant intake work.<br><br>
+							Easy review of previous visit HPI, Plan and Instructions.<br><br>
+							Clear Medication/Allergy panel with refill history.<br><br>
+							Quick access to access to Histories and Risk Factors without leaving the HPI.
+				</div>
+				</div><!-- /.container -->
+			</section>
+			<br><br><br><br><br>
+			<section id="product">
+				<div class="container inner">
+					
+
+				<div class="left">
+					<div class="ytvideo">
+						<iframe  src="https://player.vimeo.com/video/166814483" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="right">
+							<h2>Objective</h2>
+							Access complete exam in one screen.<br><br>
+							Expanded view allows for addition documentation.<br><br>
+							Vitals and blood pressure carried over from Intake.<br><br>
+							Key Data section for quick reference with abnormal highlights.
+				</div>
+
+			
+				</div><!-- /.container -->
+			</section>
+			<br><br><br><br><br>
+			<section id="product">
+				<div class="container inner">
+					
+
+				<div class="opposite-left">
+					<div class="ytvideo">
+						<iframe  src="https://player.vimeo.com/video/166522938" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="opposite-right">
+							<h2>Assmnt/Plan</h2>
+							Access complete exam in one screen.<br><br>
+							Expanded view allows for addition documentation.<br><br>
+							Vitals and blood pressure carried over from Intake.<br><br>
+							Key Data section for quick reference with abnormal highlights.
+				</div>
+				</div><!-- /.container -->
+			</section>
+						<br><br><br><br><br>
+									<a name="chug"></a>
+<div class="row">
+								
+						<div class="col-md-8 col-sm-9 center-block text-center">
+							<header>
+								<h1>Centricity Live!</h1>
+								<p>May 18th, 2016 | Phoenix, Arizona</p>
+							</header>
+						</div><!-- /.col -->
+</div><!-- ./row -->				
+
+			<section id="product">
+				<div class="container inner">
+					
+
+				<div class="left">
+					<div class="ytvideo">
+						<iframe  src="https://www.youtube-nocookie.com/embed/QQmLAUl5xG8" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="right">
+					<b>Why using your EHR is painful and how to fix it.</b><br>
+					<br><b>Description:</b><br>
+					Do you ever wonder why you feel physically and emotionally drained at the end of the clinical day? <br><br>Why does something that should be so rewarding feel like it's dragging you under? Look no further than the theory of Cognitive Load.
+				</div>
+
+			
+				</div><!-- /.container -->
+			</section>
+<br>	
+<br>	
+<br>	
+<br>	
+<br>		
+<!-- This is the Request demo piece -->
+			<div class="modal fade" id="modal-work100" tabindex="-1" role="dialog" aria-labelledby="modal-work100" aria-hidden="true">
+				<div class="modal-dialog modal-md">
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel-1"></i></span></button>
+							<h4 class="modal-title" id="modal-work06">Request a Demo</h4>
+						</div><!-- /.modal-header -->
+						
+						<!-- ============================================================= MODAL CONTENT ============================================================= -->
+						
+						<div class="modal-body">
+
+<section id="contact-form">
+				<div class="container inner">
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row">
+								
+								<div class="col-sm-6 outer-top-md inner-right-sm">
+						
+									<form name="htmlform" method="post" action="html_form_send.php">
+										
+										<div class="row">
+											<div class="col-sm-6">
+												<input  type="text" name="first_name" maxlength="50" size="30" placeholder="First Name*">
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										<div class="row">
+											<div class="col-sm-6">
+												<input  type="text" name="last_name" maxlength="50" size="30" placeholder="Last Name*">
+											</div><!-- /.col -->
+										</div><!-- /.row -->										
+										<div class="row">
+											<div class="col-sm-6">
+												  <input  type="text" name="email" maxlength="80" size="30" placeholder="E-Mail*">
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										<div class="row">
+											<div class="col-sm-6">
+												  <input  type="text" name="telephone" maxlength="80" size="30" placeholder="Phone Number">
+											</div><!-- /.col -->
+										</div><!-- /.row -->										
+											<div class="row">
+											<div class="col-sm-12">
+												<textarea name="comments" class="form-control" placeholder="Schedule preferences, questions, etc."></textarea>
+											</div><!-- /.col -->
+										</div><!-- /.row -->
+										
+										<button type="submit" class="btn btn-default btn-submit">Request Demo</button>
+										
+									</form>
+									
+									<div id="response"></div>
+									
+								</div><!-- ./col -->
+								
+								<div class="col-sm-6 outer-top-md inner-left-sm border-left">
+									<center>
+									<h2>Congratulations! </h2>
+									
+									<p>You're one step closer to ending <br> your frustration with Centricity EMR.</p>
+								
+									<br><br>
+									<br><br>
+<img src="http://ehs-corp.com/beta/assets/images/Logo.png" width="260px">
+										</center>
+								</div><!-- /.col -->
+								
+							</div><!-- /.row -->
 						</div><!-- /.col -->
 					</div><!-- /.row -->
 					
 				</div><!-- /.container -->
-			</section>
-					<br><br><br>
-					<br><br><br>
+			</section>						
+
+						</div><!-- /.modal-body -->
 						
-			
-					</div><!-- /.row -->
-					
-				</div><!-- /.container -->
-			
-			</section>
-			
-			
-			<!-- ============================================================= SECTION – BUY TEMPLATE : END ============================================================= -->
-			
+						<!-- ============================================================= MODAL CONTENT : END ============================================================= -->
+						
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div><!-- /.modal-footer -->
+						
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->	
+						
 		</main>
 
 		<!-- ============================================================= FOOTER ============================================================= -->

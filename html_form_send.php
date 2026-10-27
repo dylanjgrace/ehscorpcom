@@ -2,14 +2,14 @@
 if(isset($_POST['email'])) {
 	
 	// CHANGE THE TWO LINES BELOW
-	$email_to = "website@eh1solution.com";
+	$email_to = "support@ehs-corp.com";
 	
-	$email_subject = "Message from EH1SOLUTION.COM";
+	$email_subject = "Intrinsic Encounter";
 	
 	
 	function died($error) {
 		// your error code can go here
-		echo "We're sorry, but there have been some errors found with the form you submitted.<br /><br />";
+		echo "We're sorry, but there's errors found with the form you submitted.<br /><br />";
 		echo $error."<br /><br />";
 		echo "Please go back and fix these errors.<br /><br />";
 		die();
@@ -68,7 +68,11 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
-<html><head><title>Thanks!</title><META HTTP-EQUIV="refresh" CONTENT="5; URL=http://www.eh1solution.com/"></head><body>Thank you for contacting us. We will be in touch with you very soon.</body></html>
+
+<!-- place your own success html below -->
+
+Thank you for contacting us, you will be redirected in a moment.
+
 <?php
 }
 die();

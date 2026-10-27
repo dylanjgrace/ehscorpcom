@@ -26,12 +26,12 @@ a:focus,
 ul.arrowed li:before,
 ul.circled li:before,
 .yamm .yamm-content a:hover {
-	color: #17536f;
+	color: #F27A24;
 }
 
 .tint-bg .btn,
 .tint-color {
-	color: #fff !important;
+	color: #F27A24 !important;
 }
 
 .btn,
@@ -59,8 +59,8 @@ ul.circled li:before,
 .tint-bg.img-bg-soft:before,
 .tint-bg.img-bg-softer:before,
 .tooltip-inner {
-background-color: rgba(23, 83, 111, 0.95);}
-
+	background-color: #F27A24;
+}
 
 .btn:hover,
 .btn:focus,
@@ -79,7 +79,7 @@ background-color: rgba(23, 83, 111, 0.95);}
 .items li .text-overlay,
 .owl-carousel .item .text-overlay,
 .thumbs .thumb .text-overlay {
-	background-color: #17536f;
+	background-color: rgba(242, 122, 36, 0.9);
 }
 
 .classic-blog .post .date,
@@ -115,9 +115,9 @@ background-color: rgba(23, 83, 111, 0.95);}
 }
 
 ::selection {
-	background: #17536f; /* Safari */
+	background: #F7CAA6; /* Safari */
 }
 
 ::-moz-selection {
-	background: #17536f; /* Firefox */
+	background: #F7CAA6; /* Firefox */
 }
